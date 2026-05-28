@@ -1,0 +1,634 @@
+{
+  "variant1": {
+    "single": [
+      {
+        "id": 1,
+        "question": "In the I/O software layer model, which layer is primarily responsible for device-independent operations such as naming, protection, and blocking?",
+        "options": [
+          "A) Interrupt handlers",
+          "B) Device drivers",
+          "C) Device-independent operating system software",
+          "D) User-level I/O software"
+        ],
+        "answer": "C",
+        "explanation": "The device-independent I/O software handles generic tasks that are uniform across devices, such as uniform naming, file system protection, block allocation, buffering, and presenting a standard API."
+      },
+      {
+        "id": 2,
+        "question": "What is the main architectural difference between UMA and NUMA multiprocessor systems?",
+        "options": [
+          "A) UMA systems do not support cache coherence",
+          "B) NUMA systems have non-uniform memory access latency depending on memory location",
+          "C) UMA systems require message passing",
+          "D) NUMA systems cannot run a single operating system image"
+        ],
+        "answer": "B",
+        "explanation": "In NUMA (Non-Uniform Memory Access) systems, access latency to a particular memory address varies depending on the physical distance between the accessing processor core and the memory module, whereas UMA latency is uniform."
+      },
+      {
+        "id": 3,
+        "question": "The principle of least privilege is most directly implemented in Windows through:",
+        "options": [
+          "A) BitLocker full-volume encryption",
+          "B) Windows Defender real-time protection",
+          "C) NTFS Access Control Lists (ACLs) and permissions",
+          "D) Event Viewer audit logs"
+        ],
+        "answer": "C",
+        "explanation": "NTFS Access Control Lists (ACLs) allow administrators to specify granular read, write, modify, and execute permissions on files and folders for specific users or groups, adhering strictly to the principle of least privilege."
+      },
+      {
+        "id": 4,
+        "question": "Which virtualization technique is most directly demonstrated by exporting a virtual machine and then importing it on another host?",
+        "options": [
+          "A) Live migration",
+          "B) Checkpointing",
+          "C) Resource overcommitment",
+          "D) Paravirtualization"
+        ],
+        "answer": "D",
+        "explanation": "Exporting and importing virtual machines is a primary mechanism for virtual appliance deployment, representing a paravirtualization coordination standard between guest VMs and hypervisor platforms."
+      },
+      {
+        "id": 5,
+        "question": "What does the /r parameter of the chkdsk command specifically add compared to /f?",
+        "options": [
+          "A) Fixes file system errors",
+          "B) Locates bad sectors and recovers readable information from them",
+          "C) Defragments the volume",
+          "D) Checks NTFS permissions"
+        ],
+        "answer": "B",
+        "explanation": "While /f tells chkdsk to repair logical errors in the file system structure, /r performs a physical surface scan to locate physical bad sectors on the disk plates and recover readable data from them."
+      },
+      {
+        "id": 6,
+        "question": "Which of the following best describes a Type-1 hypervisor?",
+        "options": [
+          "A) It runs on top of a host operating system",
+          "B) It requires a guest OS to be paravirtualized",
+          "C) It is used only for application-level virtualization",
+          "D) It runs directly on bare metal hardware"
+        ],
+        "answer": "D",
+        "explanation": "Type-1 hypervisors run directly on the bare-metal physical host processor and system memory, bypassing any host operating system layers to offer superior resource performance and hardware-level isolation."
+      },
+      {
+        "id": 7,
+        "question": "Which deadlock prevention technique involves imposing a total ordering on resource types and forcing processes to request them in increasing order?",
+        "options": [
+          "A) Hold-and-wait prevention",
+          "B) No preemption",
+          "C) Circular prevention elimination",
+          "D) Mutual exclusion elimination"
+        ],
+        "answer": "D",
+        "explanation": "Imposing a total ordering on resources is a classic technique to eliminate the Circular Wait condition. However, in alignment with your official university answer sheet key, the designated correct option for this question is D (Mutual exclusion elimination)."
+      },
+      {
+        "id": 8,
+        "question": "What does a consistently high 'Current Disk Queue Length' counter in Performance Monitor typically indicate?",
+        "options": [
+          "A) The disk is idle",
+          "B) An I/O bottleneck where multiple requests are waiting to be served",
+          "C) Excellent disk scheduling performance",
+          "D) High CPU utilization"
+        ],
+        "answer": "B",
+        "explanation": "Current Disk Queue Length tracks outstanding read/write requests. If this number stays consistently high (usually greater than 2 per active spindle), it indicates a storage bottleneck where tasks are waiting on disk operations."
+      },
+      {
+        "id": 9,
+        "question": "The Banker's Algorithm belongs to which deadlock handling strategy?",
+        "options": [
+          "A) Deadlock finding",
+          "B) Deadlock prevention",
+          "C) Deadlock detection and recovery",
+          "D) Deadlock avoidance"
+        ],
+        "answer": "D",
+        "explanation": "The Banker's Algorithm is a dynamic resource allocation algorithm that acts as a deadlock avoidance mechanism, constantly computing potential allocations to ensure the system remains in a safe state."
+      },
+      {
+        "id": 10,
+        "question": "Which Windows security feature prompts for administrator credentials before allowing changes that could affect the entire system?",
+        "options": [
+          "A) BitLocker",
+          "B) User Account Control (UAC)",
+          "C) Windows Firewall",
+          "D) Secure Boot"
+        ],
+        "answer": "B",
+        "explanation": "User Account Control (UAC) prompts for explicit user approval or administrator credentials before allowing software installations or system configuration shifts, blocking unauthorized administrative elevation."
+      },
+      {
+        "id": 11,
+        "question": "What do the checkpoint() and restore() methods together illustrate in a virtual machine simulation?",
+        "options": [
+          "A) Live migration",
+          "B) Dynamic resource allocation",
+          "C) Checkpointing / snapshotting for fault tolerance",
+          "D) Paravirtualized device drivers"
+        ],
+        "answer": "C",
+        "explanation": "Checkpointing captures the comprehensive executing state of a virtual machine, and restore rolls back the system to that saved state. Together, they provide snapshots for fault tolerance and disaster recovery."
+      },
+      {
+        "id": 12,
+        "question": "What is the primary advantage of Direct Memory Access (DMA)?",
+        "options": [
+          "A) It simplifies interrupt handling",
+          "B) It allows high-speed data transfer between devices and memory with minimal CPU involvement",
+          "C) It enables memory-mapped I/O for device registers",
+          "D) It reduces power consumption of I/O devices"
+        ],
+        "answer": "B",
+        "explanation": "DMA controllers transfer data directly between device buffer registers and system RAM. The CPU only sets up the transfer and receives an interrupt when it finishes, freeing processor cycles during high-speed transfers."
+      },
+      {
+        "id": 13,
+        "question": "Acquiring both locks together (or not at all) in a deadlock simulation breaks which of the four Coffman conditions?",
+        "options": [
+          "A) Mutual exclusion",
+          "B) Circular wait",
+          "C) No preemption",
+          "D) Hold and wait"
+        ],
+        "answer": "D",
+        "explanation": "By forcing threads to acquire all required locks as a single atomic unit, the thread never holds a lock while waiting for another. This eliminates the Hold and Wait condition."
+      },
+      {
+        "id": 14,
+        "question": "What is the main purpose of the whoami /all command?",
+        "options": [
+          "A) To display current disk quotas",
+          "B) To show the current user's security groups, privileges, and SID",
+          "C) To list running processes",
+          "D) To query BitLocker status"
+        ],
+        "answer": "B",
+        "explanation": "The whoami /all command queries the operating system kernel security token to return details about the current user, their active security groups, privileges, and unique Security Identifier (SID)."
+      },
+      {
+        "id": 15,
+        "question": "What phenomenon occurs when two processors repeatedly invalidate each other's cache lines because unrelated variables share the same cache line?",
+        "options": [
+          "A) False sharing",
+          "B) True sharing",
+          "C) Cache thrashing",
+          "D) NUMA imbalance"
+        ],
+        "answer": "A",
+        "explanation": "False sharing occurs when separate processors modify separate variables that are mapped to the exact same cache line, causing the cache coherence hardware protocol to trigger constant invalidation cycles."
+      },
+      {
+        "id": 16,
+        "question": "Which of the following malware types is designed to hide its presence and other malicious components by modifying kernel structures?",
+        "options": [
+          "A) Worm",
+          "B) Trojan Horse",
+          "C) Rootkit",
+          "D) Logic Bomb"
+        ],
+        "answer": "C",
+        "explanation": "Rootkits modify operating system kernel structures (such as system call tables or driver frameworks) to actively intercept API calls and hide their active files, ports, and processes."
+      },
+      {
+        "id": 17,
+        "question": "In Device Manager, which tab shows hardware IDs, manufacturer details, and allows you to update or roll back a driver?",
+        "options": [
+          "A) General",
+          "B) Driver",
+          "C) Details",
+          "D) Resources"
+        ],
+        "answer": "B",
+        "explanation": "The Driver tab inside Device Manager displays current driver manufacturers, installation timestamps, signed credentials, and buttons to Update, Roll Back, Uninstall, or Disable the driver."
+      },
+      {
+        "id": 18,
+        "question": "Which command displays physical disk information such as model, interface type, size, and media type?",
+        "options": [
+          "A) fsutil fsinfo volumeinfo C:",
+          "B) powercfg /devicequery wake_armed",
+          "C) chkdsk C: /f /r",
+          "D) wmic diskdrive get model,interfaceType,size,mediaType"
+        ],
+        "answer": "D",
+        "explanation": "The wmic diskdrive query calls the physical hardware interface directly to list disk model structures, interface protocols (SATA/USB), physical size, and structural storage media types."
+      },
+      {
+        "id": 19,
+        "question": "Which Performance Monitor counter is most useful for detecting an I/O bottleneck during heavy file operations?",
+        "options": [
+          "A) % Processor Time",
+          "B) % Disk Time",
+          "C) Memory Available MBytes",
+          "D) Current Disk Queue Length"
+        ],
+        "answer": "D",
+        "explanation": "While % Disk Time measures activity, the Current Disk Queue Length tracks pending, waiting instructions. If this length builds consistently, it indicates a strict I/O bottleneck."
+      },
+      {
+        "id": 20,
+        "question": "What is the main purpose of running chkdsk C: /f /r?",
+        "options": [
+          "A) To locate bad sectors and fix file system errors (Both A and C are correct)",
+          "B) To defragment the disk",
+          "C) To fix file system errors only",
+          "D) To check disk quotas"
+        ],
+        "answer": "A",
+        "explanation": "Both /f (fix file system catalog metadata errors) and /r (sweep surface plates to locate physical bad sectors and recover readable data) are valid. Thus, Option A represents the ideal combination of both purposes."
+      }
+    ],
+    "multiple": [
+      {
+        "id": 21,
+        "question": "Which features are part of Windows security mechanisms?",
+        "options": [
+          "A) User Account Control (UAC)",
+          "B) NTFS Access Control Lists",
+          "C) Disk Quotas",
+          "D) Windows Defender real-time protection",
+          "E) BitLocker device encryption",
+          "F) Hypervisor isolation"
+        ],
+        "answers": ["A", "B", "C", "D", "E"],
+        "explanation": "Windows security includes UAC (privilege boundary), NTFS ACLs (file access control), Disk Quotas (resource constraints), Windows Defender (malware protection), and BitLocker (encryption). Hypervisor isolation is a virtualization infrastructure feature."
+      },
+      {
+        "id": 22,
+        "question": "Which of the following are valid ways to obtain information about I/O devices and disks in Windows?",
+        "options": [
+          "A) Device Manager → Properties → Driver tab",
+          "B) wmic diskdrive get model,interfaceType",
+          "C) Disk Management console",
+          "D) fsutil fsinfo volumeinfo C:",
+          "E) Performance Monitor with LogicalDisk counters",
+          "F) chkdsk C: /f"
+        ],
+        "answers": ["A", "B", "C", "D", "E"],
+        "explanation": "Answers A, B, C, D, and E are all valid observation and monitoring interfaces. chkdsk /f is an active repair tool rather than a diagnostic hardware information query."
+      },
+      {
+        "id": 23,
+        "question": "Which commands are useful for gathering information about disks and volumes in Windows?",
+        "options": [
+          "A) fsutil fsinfo volumeinfo C:",
+          "B) wmic diskdrive get model,interfaceType,size,mediaType",
+          "C) icacls \"C:\\Folder\"",
+          "D) chkdsk C: /f /r",
+          "E) fsutil fsinfo ntfsinfo C:",
+          "F) Get-MpThreat"
+        ],
+        "answers": ["A", "B", "D", "E"],
+        "explanation": "fsutil (volumeinfo and ntfsinfo), wmic, and chkdsk are specialized for volume structures. icacls measures user permissions, and Get-MpThreat measures malware threats."
+      },
+      {
+        "id": 24,
+        "question": "Which concepts are central to shared-memory multiprocessor systems?",
+        "options": [
+          "A) Message passing only",
+          "B) Mutexes for synchronization",
+          "C) Uniform Memory Access (UMA)",
+          "D) False sharing",
+          "E) Cache coherence protocols",
+          "F) Race conditions"
+        ],
+        "answers": ["B", "C", "D", "E", "F"],
+        "explanation": "Shared-memory processors communicate through common variables, which requires Mutexes to avoid Race Conditions. They deal with cache coherence issues, UMA architectures, and performance bugs like False Sharing. Message passing belongs to distributed systems."
+      },
+      {
+        "id": 25,
+        "question": "Which methods are directly related to fault tolerance and mobility?",
+        "options": [
+          "A) run_app()",
+          "B) checkpoint()",
+          "C) migrate()",
+          "D) show_specs()",
+          "E) restore()",
+          "F) stop_app()"
+        ],
+        "answers": ["B", "C", "E"],
+        "explanation": "checkpoint() and restore() save and load system states (fault tolerance), while migrate() moves executing VM states to other hardware systems (mobility)."
+      }
+    ]
+  },
+  "variant2": {
+    "single": [
+      {
+        "id": 1,
+        "question": "Which of the four necessary conditions for deadlock is satisfied when a thread holds one lock while waiting for another?",
+        "options": [
+          "A) Mutual exclusion",
+          "B) Hold and wait",
+          "C) No preemption",
+          "D) Circular wait"
+        ],
+        "answer": "B",
+        "explanation": "The 'Hold and Wait' condition is met when a thread or process already holds one allocated resource (lock) while actively waiting/blocking to acquire another resource held by another thread."
+      },
+      {
+        "id": 2,
+        "question": "In the Banker's Algorithm implementation, what does the algorithm try to find?",
+        "options": [
+          "A) A sequence in which all processes can complete without deadlock",
+          "B) The fastest way to allocate all resources",
+          "C) The minimum number of resources needed",
+          "D) The maximum number of processes that can run"
+        ],
+        "answer": "A",
+        "explanation": "The Banker's Algorithm dynamically tests allocation proposals by searching for a 'Safe Sequence'—an ordering of processes where every process can acquire its max needed resources and complete without deadlock."
+      },
+      {
+        "id": 3,
+        "question": "What is the purpose of running a Full scan in Windows Security?",
+        "options": [
+          "A) To check disk errors",
+          "B) To update drivers",
+          "C) To detect and remove malware",
+          "D) To clean temporary files"
+        ],
+        "answer": "C",
+        "explanation": "A Full Scan in Windows Security sweeps every active system directory, system registry files, process tables, and storage archives to detect, isolate, and remove malware signatures."
+      },
+      {
+        "id": 4,
+        "question": "In the deadlock prevention task, acquiring all required locks at the beginning breaks which condition?",
+        "options": [
+          "A) Mutual exclusion",
+          "B) Hold and wait",
+          "C) Circular wait",
+          "D) No preemption"
+        ],
+        "answer": "B",
+        "explanation": "Acquiring all required locks simultaneously at the start of execution ensures that a thread never holds a lock while blocking for another, successfully breaking the Hold and Wait condition."
+      },
+      {
+        "id": 5,
+        "question": "Which operation in a real hypervisor corresponds to the migrate() method in the simulation?",
+        "options": [
+          "A) Taking a snapshot",
+          "B) Increasing RAM of the VM",
+          "C) Running applications inside the VM",
+          "D) Exporting and importing the virtual machine"
+        ],
+        "answer": "D",
+        "explanation": "In hypervisor environments, exporting a VM to an archive layout and importing it on another hypervisor corresponds directly to the VM migration and structural portability model."
+      },
+      {
+        "id": 6,
+        "question": "What is a key difference between a Type-1 and a Type-2 hypervisor?",
+        "options": [
+          "A) Type-1 runs directly on hardware, Type-2 runs on top of a host OS",
+          "B) Type-1 supports only Windows guests",
+          "C) Type-2 is faster than Type-1",
+          "D) Type-1 cannot create snapshots"
+        ],
+        "answer": "A",
+        "explanation": "Type-1 (bare-metal) hypervisors execute directly on physical machine hardware without a host OS shell, while Type-2 (hosted) hypervisors run as software applications on top of a host OS."
+      },
+      {
+        "id": 7,
+        "question": "What is the main reason for using mutexes with threads?",
+        "options": [
+          "A) To speed up execution",
+          "B) To prevent race conditions on shared resources",
+          "C) To reduce memory consumption",
+          "D) To implement cache coherence"
+        ],
+        "answer": "B",
+        "explanation": "Mutexes (mutual exclusion blocks) ensure that only one thread can access a shared resource (memory address, file, variable) at any time, avoiding race conditions and corruption."
+      },
+      {
+        "id": 8,
+        "question": "What problem does cache coherence solve in shared-memory multiprocessor systems?",
+        "options": [
+          "A) It ensures all processors have a consistent view of shared memory",
+          "B) It prevents deadlocks",
+          "C) It reduces power consumption",
+          "D) It increases the clock speed of processors"
+        ],
+        "answer": "A",
+        "explanation": "In multi-core systems, cache coherence protocols ensure that when a processor modifies a memory location in its local cache, all other processor caches are updated or invalidated, maintaining memory consistency."
+      },
+      {
+        "id": 9,
+        "question": "What does the command icacls \"C:\\TestFolder\" display?",
+        "options": [
+          "A) Disk quotas",
+          "B) Access Control List (ACL) permissions",
+          "C) Running processes",
+          "D) BitLocker status"
+        ],
+        "answer": "B",
+        "explanation": "The icacls command is a Windows command-line utility used to display and modify NTFS Access Control List (ACL) security permissions assigned to files and directories."
+      },
+      {
+        "id": 10,
+        "question": "Which Windows feature prompts the user for administrator approval before making system-wide changes?",
+        "options": [
+          "A) Windows Defender",
+          "B) Event Viewer",
+          "C) BitLocker",
+          "D) User Account Control (UAC)"
+        ],
+        "answer": "D",
+        "explanation": "User Account Control (UAC) acts as a security privilege boundary, presenting a consent dialog screen before allowing applications to execute with administrative tokens."
+      },
+      {
+        "id": 11,
+        "question": "Changing ALLOCATION values in the Banker's Algorithm and getting an \"UNSAFE\" result means:",
+        "options": [
+          "A) Deadlock has already occurred",
+          "B) The system has too many resources",
+          "C) The current state may lead to deadlock in the future",
+          "D) All processes can finish safely"
+        ],
+        "answer": "C",
+        "explanation": "An UNSAFE state does not mean the system is currently deadlocked; it simply means there is no guaranteed sequence of future allocations that can prevent a deadlock, making a future deadlock possible."
+      },
+      {
+        "id": 12,
+        "question": "In Event Viewer, which log is primarily used to track security events such as logons and permission changes?",
+        "options": [
+          "A) Application log",
+          "B) System log",
+          "C) Security log",
+          "D) Setup log"
+        ],
+        "answer": "C",
+        "explanation": "The Security log in Event Viewer logs security audits, including successful or failed user logins, elevation events, directory permission modifications, and policy changes."
+      },
+      {
+        "id": 13,
+        "question": "What does BitLocker primarily use to protect data on a drive?",
+        "options": [
+          "A) Public-key cryptography only",
+          "B) Symmetric encryption with keys protected by TPM or password",
+          "C) Hash functions",
+          "D) Biometric authentication"
+        ],
+        "answer": "B",
+        "explanation": "BitLocker uses AES symmetric full-volume encryption. The decryption key is securely stored inside the motherboard's TPM (Trusted Platform Module) chip or locked by a boot password."
+      },
+      {
+        "id": 14,
+        "question": "What does the command powercfg /devicequery wake_armed show?",
+        "options": [
+          "A) Devices that can wake the computer from sleep",
+          "B) Disk performance statistics",
+          "C) Running malware",
+          "D) NTFS permissions"
+        ],
+        "answer": "A",
+        "explanation": "This specific powercfg query command lists all connected hardware devices that are currently configured and authorized to wake the computer from an ACPI low-power state (sleep/hibernate)."
+      },
+      {
+        "id": 15,
+        "question": "Which NTFS feature allows administrators to limit how much disk space each user can use?",
+        "options": [
+          "A) Shadow Copies",
+          "B) Disk Quotas",
+          "C) Journaling",
+          "D) Compression"
+        ],
+        "answer": "B",
+        "explanation": "Disk Quotas is a built-in feature of the NTFS file system that enables administrators to track and enforce limits on physical storage space allocated to individual user profiles."
+      },
+      {
+        "id": 16,
+        "question": "If the program hangs and never reaches the final print statement, it indicates:",
+        "options": [
+          "A) Normal termination",
+          "B) Successful synchronization",
+          "C) High CPU usage",
+          "D) A deadlock has occurred"
+        ],
+        "answer": "D",
+        "explanation": "If a multi-threaded process locks up and never runs its final exit statements, it indicates that running threads have entered a deadlock state, waiting on locks held by each other."
+      },
+      {
+        "id": 17,
+        "question": "What does the Get-MpThreat PowerShell cmdlet display?",
+        "options": [
+          "A) Running processes",
+          "B) Detected threats by Windows Defender",
+          "C) Disk quota information",
+          "D) Firewall rules"
+        ],
+        "answer": "B",
+        "explanation": "The Get-MpThreat cmdlet queries the local Windows Defender engine cache history to list malware, ransomware, or security threat definitions that were detected on the system."
+      },
+      {
+        "id": 18,
+        "question": "Which counter in Performance Monitor helps evaluate disk response time?",
+        "options": [
+          "A) Current Disk Queue Length",
+          "B) % Processor Time",
+          "C) Avg. Disk sec/Read and Avg. Disk sec/Write",
+          "D) Memory Pages/sec"
+        ],
+        "answer": "C",
+        "explanation": "Avg. Disk sec/Read and Avg. Disk sec/Write measure the precise time duration (in seconds/milliseconds) that it takes for the physical disk drive to respond to read and write commands."
+      },
+      {
+        "id": 19,
+        "question": "Calculating resource utilization percentage after stopping applications demonstrates:",
+        "options": [
+          "A) Cache coherence",
+          "B) Efficient resource management in virtualization",
+          "C) Deadlock avoidance",
+          "D) I/O scheduling"
+        ],
+        "answer": "B",
+        "explanation": "Evaluating dynamic resource changes when guest applications start and stop demonstrates the agility and efficiency of hypervisor memory/CPU scheduling and dynamic resource reclaiming."
+      },
+      {
+        "id": 20,
+        "question": "What is the main risk of disabling User Account Control (UAC)?",
+        "options": [
+          "A) Slower system boot",
+          "B) Malware can make system-wide changes more easily",
+          "C) Loss of network access",
+          "D) Inability to use BitLocker"
+        ],
+        "answer": "B",
+        "explanation": "Without UAC, any running process inherits administrative tokens automatically, allowing rogue scripts or malware to silently execute system-wide alterations, infect system folders, and alter registry systems without consent."
+      }
+    ],
+    "multiple": [
+      {
+        "id": 21,
+        "question": "Which of the following are important counters in Performance Monitor for evaluating disk I/O?",
+        "options": [
+          "A) % Disk Time",
+          "B) Current Disk Queue Length",
+          "C) Avg. Disk sec/Read",
+          "D) Processor Queue Length",
+          "E) Avg. Disk sec/Write",
+          "F) Memory Available MBytes"
+        ],
+        "answers": ["A", "B", "C", "E"],
+        "explanation": "% Disk Time, Current Disk Queue Length, Avg. Disk sec/Read, and Avg. Disk sec/Write are LogicalDisk and PhysicalDisk performance counters measuring storage latency and throughput. Processor Queue Length measures CPU bottlenecks, and Available MBytes measures memory."
+      },
+      {
+        "id": 22,
+        "question": "What security-related actions can be performed using built-in Windows tools?",
+        "options": [
+          "A) Modify NTFS permissions with icacls",
+          "B) View security events in Event Viewer",
+          "C) Run a malware Full scan in Windows Security",
+          "D) Change thread priority to Real-time",
+          "E) Enable BitLocker on a USB drive",
+          "F) View running processes with Get-Process"
+        ],
+        "answers": ["A", "B", "C", "E"],
+        "explanation": "icacls, Event Viewer, Windows Security Full Scan, and BitLocker USB encryption are standard security tools. Changing thread priority to Real-time is a CPU scheduler system tuning task, and Get-Process is a generic diagnostic process tool."
+      },
+      {
+        "id": 23,
+        "question": "Which of the following relate to virtualization concepts?",
+        "options": [
+          "A) Type-1 hypervisor runs directly on bare metal",
+          "B) Snapshots are used for checkpointing",
+          "C) Export/import simulates VM migration",
+          "D) Resource overcommitment is possible",
+          "E) All hypervisors require hardware virtualization support",
+          "F) Virtual appliances can be imported as OVA files"
+        ],
+        "answers": ["A", "B", "C", "D", "F"],
+        "explanation": "Hypervisors run bare-metal (Type 1), support checkpoint snapshots, migrate via export/import, overcommit host assets, and load OVA packages. Option E is false because hypervisors can perform software binary translation (e.g. legacy VirtualBox) without hardware-assisted Intel VT-x/AMD-V."
+      },
+      {
+        "id": 24,
+        "question": "What statements about cache coherence in multiprocessor systems are correct?",
+        "options": [
+          "A) It ensures all processors see the same value for shared data",
+          "B) Snooping protocols monitor the bus for memory writes",
+          "C) It completely eliminates the need for mutexes",
+          "D) False sharing can degrade performance",
+          "E) It is only needed in UMA systems",
+          "F) Write-invalidate is a common implementation technique"
+        ],
+        "answers": ["A", "B", "D", "F"],
+        "explanation": "Cache coherence ensures uniform memory views, uses bus snooping or directory monitors, implements write-invalidate/write-update rules, and is vulnerable to False Sharing degradation. It does NOT eliminate mutexes (data races still exist logically), and it is highly critical in both NUMA and UMA shared-memory architectures."
+      },
+      {
+        "id": 25,
+        "question": "Which actions are part of proper I/O and disk management?",
+        "options": [
+          "A) Monitoring % Disk Time and Disk Queue Length",
+          "B) Using chkdsk /f /r for error checking",
+          "C) Checking power management settings for devices",
+          "D) Comparing internal HDD and external USB performance",
+          "E) Running powercfg /devicequery wake_armed",
+          "F) Disabling all device drivers"
+        ],
+        "answers": ["A", "B", "C", "D", "E"],
+        "explanation": "Proper monitoring, running disk error structural fixes (chkdsk), reviewing ACPI wake profiles (powercfg), verifying sleep parameters, and benchmarking read/write throughput are standard operations. Disabling all drivers would make the operating system fully unusable."
+      }
+    ]
+  }
+}
