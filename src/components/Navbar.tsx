@@ -28,6 +28,8 @@ export default function Navbar() {
       else if (segment.startsWith("lab")) {
         const labNum = segment.replace("lab", "");
         label = `Lab ${labNum}`;
+      } else if (/^\d+$/.test(segment) && segments[i - 1] === "labs") {
+        label = `Lab ${segment}`;
       } else if (segment === "variant1") {
         label = "Variant 1";
       } else if (segment === "variant2") {

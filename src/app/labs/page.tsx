@@ -60,7 +60,7 @@ export default function LabsHub() {
           return (
             <Link 
               key={lab.id} 
-              href={`/labs/${lab.id}`}
+              href={`/labs/${lab.id.replace(/^lab/, "")}`}
               className="glass-panel glass-panel-hover flex flex-col justify-between p-5 relative overflow-hidden group border border-border/40"
             >
               {/* Completed Visual Status Tag */}

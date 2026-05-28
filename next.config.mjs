@@ -6,7 +6,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: '/final-aos',
-  assetPrefix: '/final-aos',
-}
+  assetPrefix: '/final-aos/',
+};
 
-export default nextConfig
+export default nextConfig;
