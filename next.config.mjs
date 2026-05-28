@@ -5,6 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: '/final-aos',
+  assetPrefix: '/final-aos',
 }
 
 export default nextConfig
